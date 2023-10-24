@@ -1,0 +1,39 @@
+Object Relations Code Challenge: Restaurants
+This code challenge involves creating a simple model for a restaurant review system, similar to Yelp. The challenge includes three main classes: Customer, Restaurant, and Review. These classes interact to manage customer reviews and restaurant ratings.
+
+Customer
+__init__(given_name, family_name): Initialize a customer with a given name and family name.
+given_name(): Get the customer's given name.
+family_name(): Get the customer's family name.
+full_name(): Get the customer's full name (given name and family name concatenated).
+all(): Get a list of all customer instances.
+restaurants(): Get a unique list of restaurants a customer has reviewed.
+add_review(restaurant, rating): Add a review associated with a restaurant and rating to the customer.
+num_reviews(): Get the total number of reviews authored by a customer.
+find_by_name(name): Find a customer by their full name.
+find_all_by_given_name(name): Find all customers with a given name.
+
+Restaurant
+__init__(name): Initialize a restaurant with a name.
+name(): Get the restaurant's name.
+reviews(): Get a list of all reviews for the restaurant.
+average_star_rating(): Get the average star rating for the restaurant.
+customers(): Get a unique list of customers who have reviewed the restaurant.
+
+Review
+__init__(customer, restaurant, rating): Initialize a review with a customer, restaurant, and rating.
+rating(): Get the rating for the review.
+customer(): Get the customer object associated with the review.
+restaurant(): Get the restaurant object associated with the review.
+all(): Get a list of all reviews.
+
+Class Descriptions
+Customer
+The Customer class represents a customer who leaves reviews. It has methods to access and manipulate information about customers, such as their names, reviews, and more. You can create new customers using __init__, retrieve information about a customer's name, retrieve all customer instances, find restaurants a customer has reviewed, add reviews to a customer, and more.
+
+Restaurant
+The Restaurant class represents a restaurant that can be reviewed. It includes methods to access the restaurant's name, reviews, average star rating, and customers who reviewed it. You can initialize restaurants using __init__, retrieve the restaurant's name, reviews, calculate the average star rating, and find customers who reviewed it.
+
+Review
+The Review class represents a customer's review of a restaurant. It includes methods to retrieve the review's rating, customer, and restaurant. You can create reviews using __init__, access the rating, customer, and restaurant associated with the review, and retrieve all reviews.
+
